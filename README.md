@@ -13,16 +13,17 @@ The compressed representation from the encoding stage is passed into the decoder
 The decoder network is symmetrical to the encoder network, consisting of fully connected layers, upsampling layers, and sometimes transposed convolutional layers. It takes the compressed representation and gradually increases the spatial dimensions to reconstruct the original input data
 The final layer of the decoder network generates the reconstructed output, which aims to closely resemble the original input data
 
-**
-Import Modules**
+
+Import Modules
 
 import numpy as np
 import matplotlib.pyplot as plt
 from keras import Sequential
 from keras.layers import Dense, Conv2D, MaxPooling2D, UpSampling2D
 from keras.datasets import mnist
-numpy - used to perform a wide variety of mathematical operations on arrays
-matplotlib - used for data visualization and graphical plotting
-keras - used to provide a user-friendly and intuitive interface for designing, training, and evaluating deep learning models
-keras.layers - provides a variety of pre-defined layers that can be used to construct neural network models
-keras.datasets - provides pre-loaded datasets that can be used for training, testing, and evaluating machine learning models
+
+numpy -         used to perform a wide variety of mathematical operations on arrays
+matplotlib -    used for data visualization and graphical plotting
+keras -         used to provide a user-friendly and intuitive interface for designing, training, and evaluating deep learning models
+keras.layers -  provides a variety of pre-defined layers that can be used to construct neural network models
+keras.datasets -provides pre-loaded datasets that can be used for training, testing, and evaluating machine learning models
