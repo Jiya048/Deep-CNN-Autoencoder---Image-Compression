@@ -4,8 +4,8 @@ Autoencoder is one of the main concept that needs to be known for various use ca
 
 Flow of Autoencoder
 
-**Input Image -> Encoder -> Compressed Representation -> Decoder -> Reconstruct Input Image
-**
+Input Image -> Encoder -> Compressed Representation -> Decoder -> Reconstruct Input Image
+
 The autoencoder takes an input data sample, here we have considered an image, and feeds it into the encoder network
 The encoder network consists of several layers, typically including convolutional layers, pooling layers, and fully connected layers. These layers progressively reduce the spatial dimensions and extract meaningful features from the input data
 The final layer of the encoder network produces a compressed representation of the input data
